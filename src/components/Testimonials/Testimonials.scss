@@ -1,0 +1,41 @@
+@use '../../scss/' as *;
+
+.testimonals{
+    padding-top: 5%;
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 5%;
+    }
+    background-color: rgb(241, 241, 241);
+}
+
+.comments{
+    height: 70%;
+    // border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.singleComment{
+    margin-bottom: 10%;
+    padding: 1rem;
+
+    border-radius: 30px;
+    display: flex;
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+    img{
+        width: 90px;
+        height: 70px;
+        border-radius: 50%;
+    }
+}

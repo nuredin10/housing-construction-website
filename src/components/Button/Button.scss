@@ -1,0 +1,15 @@
+button{
+    width: 13rem;
+    height: 2.7rem;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: rgb(240, 240, 240);
+}
+
+button:hover{
+    transition: 0.3s ease;
+    border: none;
+    background-color: rgb(39, 37, 37);
+}

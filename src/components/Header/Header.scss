@@ -1,0 +1,126 @@
+@use "../../scss/" as *;
+
+.header{
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  z-index: 10;
+  // box-shadow: 0 12px 12px -12px rgb(255, 0, 0);
+
+}
+nav {
+
+  @include flex(center, space-around);
+  min-height: 8vh;
+  background-color: rgba(0, 0, 0,0.5);
+    width: 100%;
+  position: fixed;
+
+}
+
+.logo {
+  color: #c5c5c5;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  @include flex(center, space-around);
+  // background-color: red;
+  width: 35%;
+}
+
+.nav-links a {
+  color: #c5c5c5;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links a:hover{
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+    
+
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(224, 224, 224);
+  margin: 5px;
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(95, 89, 87);
+    @include flex(center, null);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+} 
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.navbar{
+  background: rgb(95, 89, 87);
+  transition: 0.3s ease-in;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  nav{
+    background: rgb(95, 89, 87);
+    transition: 0.3s ease-in;
+    color: white;
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-4px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}

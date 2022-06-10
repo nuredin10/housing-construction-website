@@ -1,0 +1,51 @@
+@use '../../scss/' as *;
+
+.about-section{
+    @include flex(center, space-between);
+    // display: flex;
+    // justify-content: space-around;
+    // justify-content: center;
+    height: 100vh;
+    // padding: 0 8% 0 8%;
+    // border: 1px solid red;
+
+    @include mobile{
+        flex-direction: column;
+        padding-top: 10%;
+    }
+    h1{
+        transform: rotate(-90deg);
+        // border: 1px solid red;
+        // width: 10%;
+        letter-spacing: 8px;
+        height:10%;
+        width: 20%;
+        @include mobile{
+            transform: rotate(360deg);
+            // background-color: red;
+            width: 70%;
+            // border: 1px solid red;
+        }
+    }
+    p{
+        width: 40%;
+        
+        color: rgb(0, 0, 0);
+        @include mobile{
+            width: 85%;
+            margin-top: -15%;
+
+        }
+    }
+    img{
+        border-radius: 10px;
+        margin-right: 6%;
+        width: 40%;
+        height: 60%;
+
+        @include mobile{
+            width: 85%;
+            height: 50%;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@use '../../scss/' as *;
+
+
+.banner-content{
+    position: absolute;
+    
+    top: 35%;
+    left: 15%;  
+    z-index: 100000;
+    color: rgb(250, 251, 252);
+    h1{
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+    p{
+            font-size: 1.1rem;
+            width: 60%;
+        @include mobile{
+            width: 90%;
+        }
+        }
+
+    @include mobile{
+        top: 15%;
+    }
+}
