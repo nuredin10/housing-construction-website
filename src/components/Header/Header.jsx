@@ -26,11 +26,11 @@ function Header() {
   return (
     <div className="header">
       <nav className={navbar ? 'navbar' : ''}>
+          <a href="#home" >
         <h4 className="logo">
-          {/* <a href="#" > */}
             Nuredin
-          {/* </a> */}
         </h4>
+          </a>
 
         <ul className={`nav-links ${isActive === true ?'nav-active' : ''}` }>
           <li>

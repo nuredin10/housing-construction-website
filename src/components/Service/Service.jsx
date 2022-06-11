@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Service.scss";
 import SingleService from "./SingleService";
 import { AiFillCar } from "react-icons/ai";
@@ -9,6 +9,20 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 
 function Service() {
+  const [numberOfContent, setNumberOfContent] = useState(3)
+
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+        setNumberOfContent(1)
+    } else {
+        setNumberOfContent(3)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize)
+  })
+
   const icons = [
     [
       "house",
@@ -54,7 +68,7 @@ function Service() {
       <Splide
         options={{
             autoplay: true,
-          perPage: 3,
+          perPage: numberOfContent,
           arrows: false,
           pagination: true,
           drag: "free",
