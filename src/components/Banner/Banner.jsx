@@ -43,7 +43,7 @@ function Banner() {
               backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url(${house2})`,
             }}
           >
-                        <BannerContent h1Text='We have special descount' buttonText='Contact Us'></BannerContent>
+                        <BannerContent h1Text='We Have Special Discount' buttonText='Contact Us'></BannerContent>
 
           </div>
           {/* <img src={house2}></img> */}

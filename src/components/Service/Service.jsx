@@ -5,6 +5,7 @@ import { AiFillCar } from "react-icons/ai";
 import { BsFillHouseFill } from "react-icons/bs";
 import { MdConstruction } from "react-icons/md";
 import { FaFileContract } from "react-icons/fa";
+import {VscWorkspaceTrusted} from 'react-icons/vsc'
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 
@@ -25,38 +26,38 @@ function Service() {
 
   const icons = [
     [
-      "house",
+      "House",
       <BsFillHouseFill size={80} />,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore quis aspernatur ad nam aperiam minus impedit, sit, ",
     ],
     [
-      "construction",
+      "Construction",
       <MdConstruction size={80} />,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore quis aspernatur ad nam aperiam minus impedit, sit, consequatur non veniam odit ",
     ],
     [
-      "contract",
-      <FaFileContract size={80} />,
+      "Trust",
+      <VscWorkspaceTrusted size={80} />,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore quis aspernatur ad nam aperiam minus impedit, sit, consequatur",
     ],
     [
-      "construction",
+      "Contract",
       <MdConstruction size={80} />,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore quis aspernatur ad nam aperiam minus impedit, sit, consequatur non veniam ",
     ],
     [
-      "contract",
-      <FaFileContract size={80} />,
+      "House",
+      <BsFillHouseFill size={80} />,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore quis aspernatur ad nam aperiam minus impedit, sit, consequatur non veniam ",
     ],
     [
-      "construction",
+      "Construction",
       <MdConstruction size={80} />,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore quis aspernatur ad nam aperiam minus impedit, sit, consequatur non veniam",
     ],
     [
-      "contract",
-      <FaFileContract size={80} />,
+      "Trust",
+      <VscWorkspaceTrusted size={80} />,
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum inventore quis aspernatur ad nam aperiam minus impedit, sit, consequatur non veniam ",
     ],
   ];

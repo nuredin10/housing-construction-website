@@ -1,15 +1,23 @@
+@use '../../scss/' as *;
+
 button{
     width: 13rem;
     height: 2.7rem;
-    background-color: transparent;
-    border: 1px solid rgb(255, 255, 255);
+    background-color: #fff;
     border-radius: 5px;
     font-size: 1.2rem;
-    color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    border: none;
+    
+    @include mobile{
+        margin-left: 20%;
+        // @include flex(center,center);
+    }
 }
 
 button:hover{
+    border: 1px solid rgb(255, 255, 255);
     transition: 0.3s ease;
-    border: none;
-    background-color: rgb(39, 37, 37);
+    background-color: transparent;
+    color: white;
 }

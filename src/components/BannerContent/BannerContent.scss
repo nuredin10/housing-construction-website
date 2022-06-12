@@ -11,12 +11,18 @@
     h1{
         margin-bottom: 1.5rem;
         font-size: 3rem;
+        @include mobile{
+            text-align: center;
+            width: 95%;
+        }
     }
     p{
             font-size: 1.1rem;
             width: 60%;
         @include mobile{
-            width: 90%;
+            width: 95%;
+            text-align: center;
+            // width: 85%;
         }
         }
 
